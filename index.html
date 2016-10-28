@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.checkradios.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form action="" method="get" class="pull-left">
+                        <div class="form-group pRelative search-box">
+                            <input type="text" class="form-control " placeholder="جستجو...">
+                            <button class="search">
+                                <img src="img/search.png">
+                            </button>
+                        </div>
+                    </form>
+                    <button class="login pull-left" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-user"></i>
+                    </button>
+                    <a href="#">
+                        <img src="img/logo.png" class="logo img-responsive pull-right">
+                    </a>
+                    <!-- Large modal -->
+
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close pull-left" data-dismiss="modal" aria-hidden="true">
+                                        ×</button>
+                                    <h4 class="modal-title text-right" id="myModalLabel">
+                    ورود یا ثبت نام </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-sm-8  col-xs-12 pull-right login-box ">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs">
+                                                <li class="active pull-right"><a href="#Login" data-toggle="tab">ورود</a>
+                                                </li>
+                                                <li class="pull-right"><a href="#Registration" data-toggle="tab">ثبت نام</a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane active rtl" id="Login">
+                                                    <form role="form" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <label for="email" class="col-sm-2 col-xs-2 pull-right control-label">
+                                                                ایمیل</label>
+                                                            <div class="col-sm-10 col-xs-10 pull-right">
+                                                                <input type="email" class="form-control" id="email1" placeholder="ایمیل" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1" class="col-sm-2 col-xs-2 pull-right control-label">
+                                                                کلمه عبور</label>
+                                                            <div class="col-sm-10 col-xs-10 pull-right">
+                                                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="  کلمه عبور" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-2 pull-right">
+                                                            </div>
+                                                            <div class="col-sm-10 pull-right text-right">
+                                                                <a href="javascript:;">فراموشی پسورد</a>
+                                                                <button type="submit" class="btn btn-primary btn-sm">
+                                                                    ثبت</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane rtl" id="Registration">
+                                                    <form role="form" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <label for="email" class="col-sm-2 col-xs-2 pull-right control-label">
+                                                                نام</label>
+                                                            <div class="col-sm-10 col-xs-10 pull-right">
+                                                                <div class="row">
+                                                                    <div class="col-md-3 col-3-10 pull-right">
+                                                                        <select class="form-control">
+                                                                            <option>آقا</option>
+                                                                            <option>خانم</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-9 col-xs-9 pull-right">
+                                                                        <input type="text" class="form-control" placeholder="نام" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email" class="col-sm-2 col-xs-2 pull-right control-label">
+                                                                ایمیل</label>
+                                                            <div class="col-sm-10 col-xs-10 pull-right">
+                                                                <input type="email" class="form-control" id="email" placeholder="ایمیل" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="mobile" class="col-sm-2 col-xs-2 pull-right control-label">
+                                                                موبایل</label>
+                                                            <div class="col-sm-10  col-xs-10 pull-right">
+                                                                <input type="email" class="form-control" id="mobile" placeholder="موبایل" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="password" class="col-sm-2  col-xs-2 pull-right control-label">
+                                                                کلمه عبور</label>
+                                                            <div class="col-sm-10  col-xs-10 pull-right">
+                                                                <input type="password" class="form-control" id="password" placeholder=" کلمه عبور" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-2  col-xs-2 pull-right">
+                                                            </div>
+                                                            <div class="col-sm-10   col-xs-10 pull-right">
+                                                                <button type="button" class="btn btn-default btn-sm">
+                                                                    لغو</button>
+
+                                                                <button type="button" class="btn btn-primary btn-sm">
+                                                                    ذخیره و ادامه</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div id="OR" class="hidden-xs">
+                                                یا</div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div class="row text-center sign-with">
+                                                <div class="col-md-12">
+                                                    <h3>
+                                   ورود با استفاده از</h3>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="btn-group btn-group-justified">
+                                                        <a href="#" class="btn btn-info">Yahoo</a>  <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 nav-menu">
+                        <div class="navigaion hidden-xs hidden-sm">
+                            <ul>
+                                <li class=''>
+                                    <a href='index.html'>
+                                        <span>
+											<i class="fa fa-home"></i>
+										</span>
+                                    </a>
+                                </li>
+                                <li class='has-sub'><a href='#'><span>جدول</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='#'><span>لیگ  برتر</span></a>
+                                            <ul>
+                                                <li><a href='#'><span>باشگاهی</span></a>
+                                                </li>
+                                                <li class='last'><a href='#'><span>سالنی</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='#'><span>لیگ دسته یک</span></a>
+                                            <ul>
+                                                <li><a href='#'><span>باشگاهی</span></a>
+                                                </li>
+                                                <li class='last'><a href='#'><span>سالنی</span></a>
+                                                </li>
+                                                <li><a href='#'><span>باشگاهی</span></a>
+                                                </li>
+                                                <li class='last'><a href='#'><span>سالنی</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'><span>نگارخانه</span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>ویدیو</span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>مردان پرسپولیس</span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>تاریخچه </span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>آرشیو </span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>مقالات </span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>کاریکاتورها </span></a>
+                                </li>
+                                <li class='last'><a href='#'><span>تماس با ما </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="time  hidden-xs hidden-sm">چهارشنبه 14 بهمن 1394 - 15:49</span>
+                        <button class="btn btn-sm menu-btn pull-right  hidden-lg hidden-md">منو
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button class="btn btn-sm news-btn pull-left  hidden-lg hidden-md">اخبار
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+    <div class="container white-bg">
+        <div class="row">
+            <div class="col-md-3 hidden-xs hidden-sm">
+                <div class="news-category index desktop">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li role="presentation" class="active"><a href="#hame" aria-controls="hame" role="tab" data-toggle="tab">همه</a>
+                        </li>
+                        <li role="presentation"><a href="#dakheli" aria-controls="dakheli" role="tab" data-toggle="tab">داخلی</a>
+                        </li>
+                        <li role="presentation"><a href="#khareji" aria-controls="khareji" role="tab" data-toggle="tab">خارجی</a>
+                        </li>
+                        <li role="presentation"><a href="#ekhtesasi" aria-controls="ekhtesasi" role="tab" data-toggle="tab">اختصاصی</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane side-news fade in active" id="hame">
+                            <ul class="no-pad text-right">
+                                <li>
+                                    <a href="#">
+											محمد رویانیان به عضویت هیئت مدیره سیاه‌جامگان مشهد درآمد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											رضایی: پرسپولیس از هرنظر به استقلال برتری دارد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											ویدیو/ گل فوق‌العاده بهزاد زادعلی‌اصغری در مسابقات فوتبال 5 نفره... 
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											دربی 83 در هوایی گرم و آفتابی
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											برای دربی 83؛ درهای ورزشگاه آزادی ساعت 12 باز می‌شود/ بدون ...
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											بادامکی: شرایط پرسپولیس از لحاظ روحی و روانی بهتر از استقلال است
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											انتقاد خوردبین از فدراسیون فوتبال و کارلوس کی‌روش
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											بزیک: پرسپولیس برنده دربی خواهد بود
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											درخشان: پرسپولیس شرایط بهتری نسبت به استقلال دارد و 2 بر ص...
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											استیلی: در داربی نباید به جایگاه تیم‌ها نگاه کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											محمد رویانیان به عضویت هیئت مدیره سیاه‌جامگان مشهد درآمد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											رضایی: پرسپولیس از هرنظر به استقلال برتری دارد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											ویدیو/ گل فوق‌العاده بهزاد زادعلی‌اصغری در مسابقات فوتبال 5 نفره... 
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											دربی 83 در هوایی گرم و آفتابی
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												برای دربی 83؛ درهای ورزشگاه آزادی ساعت 12 باز می‌شود/ بدون ...
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												بادامکی: شرایط پرسپولیس از لحاظ روحی و روانی بهتر از استقلال است
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												انتقاد خوردبین از فدراسیون فوتبال و کارلوس کی‌روش
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												بزیک: پرسپولیس برنده دربی خواهد بود
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												درخشان: پرسپولیس شرایط بهتری نسبت به استقلال دارد و 2 بر ص...
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												 سری اول تیترها و پیش‌بینی‌های هواداران
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												 سری اول تیترها و پیش‌بینی‌های هواداران
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												استیلی: در داربی نباید به جایگاه تیم‌ها نگاه کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												درخشان: پرسپولیس شرایط بهتری نسبت به استقلال دارد و 2 بر ص...
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												 سری اول تیترها و پیش‌بینی‌های هواداران
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												دربی را پیش‌بینی کنید، تیتر بزنید و با ما به اشتراک بگذارید
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												دربی را پیش‌بینی کنید، تیتر بزنید و با ما به اشتراک بگذارید
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												دربی را پیش‌بینی کنید، تیتر بزنید و با ما به اشتراک بگذارید
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												دربی را پیش‌بینی کنید، تیتر بزنید و با ما به اشتراک بگذارید
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												آزمون امید طلایی روس‌ها در لیگ قهرمانان اروپا
+											</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+												پرسپولیسی ها بیش ترین مبلغ پاداش را دریافت خواهند کرد
+											</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane side-news fade" id="dakheli">
+                            <ul>222</ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane side-news fade" id="khareji">
+                            <ul>333</ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane side-news fade" id="ekhtesasi">
+                            <ul>444</ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9 get-size">
+
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 pull-right">
+                        <div class="news-items-big">
+                            <div class="news-item-big">
+                                <div class="news-item-big-inner">
+                                    <img src="img/news-img1.png" class="img-responsive">
+                                    <div class="news-item-big-inner-text">
+                                        <a href="#">
+										سید جلال حسینی مدافع پرسپولیس به احتمال فراوان به دربی 83 می رسد
+									</a>
+                                        <p>
+                                            سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود. حضور در این بازی حساس وضعیت حسینی را برای دربی تهران سخت‌تر کرد و این در حالی است که گفته می‌شود او شرایط مبهمی برای دیدار مقابل استقلال دارد ...
+                                        </p>
+                                        <div class="article-item-link text-left">
+                                            <a href="#">ادامه مطلب</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item-big">
+                                <div class="news-item-big-inner">
+                                    <img src="img/news-img1.png" class="img-responsive">
+                                    <div class="news-item-big-inner-text">
+                                        <a href="#">
+										سید جلال حسینی مدافع پرسپولیس به احتمال فراوان به دربی 83 می رسد
+									</a>
+                                        <p>
+                                            سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود. حضور در این بازی حساس وضعیت حسینی را برای دربی تهران سخت‌تر کرد و این در حالی است که گفته می‌شود او شرایط مبهمی برای دیدار مقابل استقلال دارد ...
+                                        </p>
+                                        <div class="article-item-link text-left">
+                                            <a href="#">
+															ادامه مطلب
+														</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="news-items-little">
+                            <div class="news-item-little">
+                                <img src="img/news-img1.png" class="img-responsive">
+                                <div class="news-item-little-inner-text rtl">
+                                    <p>
+                                        سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود.....
+                                        <a href="#">		ادامه مطلب</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news-item-little">
+                                <img src="img/news-img1.png" class="img-responsive">
+                                <div class="news-item-little-inner-text rtl">
+                                    <p>
+                                        سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود.....
+                                        <a href="#">		ادامه مطلب</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-items-little">
+                            <div class="news-item-little">
+                                <img src="img/news-img1.png" class="img-responsive">
+                                <div class="news-item-little-inner-text rtl">
+                                    <p>
+                                        سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود.....
+                                        <a href="#">		ادامه مطلب</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news-item-little">
+                                <img src="img/news-img1.png" class="img-responsive">
+                                <div class="news-item-little-inner-text rtl">
+                                    <p>
+                                        سیدجلال حسینی در حالی مقابل تراکتورسازی به میدان رفت که از ناحیه قفسه سینه با مصدومیت مواجه بود.....
+                                        <a href="#">		ادامه مطلب</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-body">
+                    <div class="row ">
+                        <div class="col-xs-12">
+                            <div class="article-header">
+                                <span class="pull-right">
+									مقالات و یادداشت ها 
+								</span>
+                                <button class="article-all-btn pull-left">
+                                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    همه مقالات
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+
+                            <div class="row no-mar">
+                                <div class="col-md-6 pull-right">
+                                    <div class="row article-item no-mar">
+                                        <div class="col-md-4 pull-right 	">
+                                            <img src="img/article-img1.png" class="img-responsive article-img">
+                                        </div>
+                                        <div class="col-md-8 no-pad-right pull-right rtl	">
+                                            <a href="#" class="article-title">
+														مقایسه سرخابی‌ها در دو نیمه: یک نیمه عالی، یک نیمه خالی 
+													</a>
+                                            <p class="article-text">
+                                                پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف منصوریان در نیمه دوم تفاوت جایگاه سیزده پله‌ای میان دو تیم در جدول رده بندی لیگ بوده است . امتیازات...
+                                            </p>
+                                            <div class="article-item-link text-left">
+                                                <a href="#">
+															ادامه مطلب
+														</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pull-right">
+                                    <div class="row article-item  no-mar">
+                                        <div class="col-md-4 pull-right	">
+                                            <img src="img/article-img1.png" class="img-responsive article-img">
+                                        </div>
+                                        <div class="col-md-8 no-pad-right pull-right rtl">
+                                            <a href="#" class="article-title">
+														مقایسه سرخابی‌ها در دو نیمه: یک نیمه عالی، یک نیمه خالی 
+													</a>
+                                            <p class="article-text">
+                                                پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف منصوریان در نیمه دوم تفاوت جایگاه سیزده پله‌ای میان دو تیم در جدول رده بندی لیگ بوده است . امتیازات...
+                                            </p>
+                                            <div class="article-item-link text-left">
+                                                <a href="#">
+															ادامه مطلب
+														</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pull-right">
+                                    <div class="row article-item no-mar">
+                                        <div class="col-md-4 pull-right 	">
+                                            <img src="img/article-img1.png" class="img-responsive article-img">
+                                        </div>
+                                        <div class="col-md-8 no-pad-right pull-right rtl	">
+                                            <a href="#" class="article-title">
+														مقایسه سرخابی‌ها در دو نیمه: یک نیمه عالی، یک نیمه خالی 
+													</a>
+                                            <p class="article-text">
+                                                پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف منصوریان در نیمه دوم تفاوت جایگاه سیزده پله‌ای میان دو تیم در جدول رده بندی لیگ بوده است . امتیازات...
+                                            </p>
+                                            <div class="article-item-link text-left">
+                                                <a href="#">
+															ادامه مطلب
+														</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pull-right">
+                                    <div class="row article-item  no-mar">
+                                        <div class="col-md-4 pull-right	">
+                                            <img src="img/article-img1.png" class="img-responsive article-img">
+                                        </div>
+                                        <div class="col-md-8 no-pad-right pull-right rtl">
+                                            <a href="#" class="article-title">
+														مقایسه سرخابی‌ها در دو نیمه: یک نیمه عالی، یک نیمه خالی 
+													</a>
+                                            <p class="article-text">
+                                                پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف منصوریان در نیمه دوم تفاوت جایگاه سیزده پله‌ای میان دو تیم در جدول رده بندی لیگ بوده است . امتیازات...
+                                            </p>
+                                            <div class="article-item-link text-left">
+                                                <a href="#">
+															ادامه مطلب
+														</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bahs">
+                    <a href="#">
+                        <img src="img/bahs.png" class="img-responsive">
+                    </a>
+                </div>
+                <!--rade bandi-->
+                <div class="table-responsive radebandi">
+                    <div class="form-group">
+
+                        <select class="form-control rtl">
+                            <option>لیگ دسته یک</option>
+                            <option>لیگ دسته دو</option>
+                            <option>لیگ دسته سه</option>
+                        </select>
+                    </div>
+                    <table class="table text-center rtl">
+                        <tr class="red-bg">
+                            <td colspan="3" class="red-bg">جدول رده بندی</td>
+                        </tr>
+                        <tr class="black-bg">
+                            <td class="border-left">نام تیم</td>
+                            <td class="border-left">بازیها</td>
+                            <td>امتیاز</td>
+                        </tr>
+                        <tr>
+                            <td>تراکتور سازی</td>
+                            <td>6</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>پرسپولیس</td>
+                            <td>6</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>سپاهان</td>
+                            <td>6</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>نفت تهران</td>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>صنعت نفت آبادان</td>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>سیاه جامگان</td>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>سایپا</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>استقلال خوزستان</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>ذوب آهن</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>فولاد</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>ماشین سازی</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>پدیده</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>صبای قم</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>پیکان</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>استقلال</td>
+                            <td>6</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>گسترش فولاد</td>
+                            <td>6</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 pull-right ">
+                        <div class="red-bg right-box">
+                            <div class=" row">
+                                <div class="col-md-3 col-xs-4 pull-right">
+                                    <div class="circle">
+                                        <span>
+											پرسپولیس در چنین روزی
+										</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-xs-8 pull-right rtl padLeft25">
+                                    <a href="#">آن شهرآورد خاطره انگیز !</a>
+                                    <p>
+                                        پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف منصوریان در نیمه دوم تفاوت جایگاه سیزده پله‌ای میان دو تیم در جدول رده بندی لیگ بوده است . پرسپولیس و استقلال در 5 بازی اخیر هفت امتیاز از نیمه‌های اول‌شان گرفته اند، اما عملکرد خوب برانکو در نیمه مربیان و ضعف....
+                                    </p>
+                                    <div class="article-item-link text-left">
+                                        <a href="#">
+															ادامه مطلب
+														</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 pull-right">
+                        <div class="gray-bg left-box">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-4 pull-right">
+                                    <div class="circle">
+                                        <span> نظر سنجی هوادارن</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-xs-8 pull-right rtl padLeft25">
+                                    <span>نتیجه بازی پرسپولیس و سپاهان ؟ </span>
+                                    <p class="text-right">
+                                        <form action="" method="post" class="ltr text-right">
+                                            <label>برد پرسپولیس
+                                                <input type="radio" class="checkradios-fontawesome" id="test1" name="nazarsanji" />
+                                            </label>
+                                            <br>
+                                            <label>مساوی
+                                                <input type="radio" class="checkradios-fontawesome" id="test1" name="nazarsanji" />
+                                            </label>
+                                            <br>
+                                            <label>برد سپاهان
+                                                <input type="radio" class="checkradios-fontawesome" id="test1" name="nazarsanji" />
+                                            </label>
+                                            <br>
+                                            <div class="article-item-link text-left">
+                                                <a href="#">
+															ثبت رای
+														</a>
+                                                <a href="#" class="black-bg">
+															مشاهده آمار
+														</a>
+                                            </div>
+                                        </form>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-4 col-xs-6 slider-center  pull-right">
+                        <div class="negarkhane">
+                            <span class="slider-header">
+								نگار خانه
+							</span>
+                            <div class="slider one">
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/negarkhane1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  نوستالوژي : بررسي مجلات قديمي</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/negarkhane1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  نوستالوژي : بررسي مجلات قديمي</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/negarkhane1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  نوستالوژي : بررسي مجلات قديمي</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 slider-center pull-right">
+                        <div class="negarkhane">
+                            <span class="slider-header">
+								روزنامه های امروز
+							</span>
+                            <div class="slider two">
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/roozname1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span> روزنامه پیروزی 4شنبه 25 مهر</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/roozname1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span> روزنامه پیروزی 4شنبه 25 مهر</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6  slider-center pull-right">
+                        <div class="negarkhane">
+                            <span class="slider-header">
+							تاریخچه
+							</span>
+                            <div class="slider three">
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/tarikhche1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  میناوند ومهدوی کیا،جوانهای پرسپولیس دهه 70</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/tarikhche1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  میناوند ومهدوی کیا،جوانهای پرسپولیس دهه 70</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slider-item">
+                                    <a href="#">
+                                        <img src="img/tarikhche1.png" class="img-responsive">
+                                        <div class="slider-footer">
+                                            <span>  میناوند ومهدوی کیا،جوانهای پرسپولیس دهه 70</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/start of the last videos-->
+                <div class="row">
+                    <div class="col-sm-1 col-xs-12 pull-right">
+                        <div class="last-videos-title">
+                            <span>
+								آخرین ویدیو ها 
+							</span>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="video-thumbnails">
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/thumb1.png">
+                                        <span>
+                                            خلاصه بازی پرسپولیس - استقلال
+                                            <br>26 شهریور 1395</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--/End of the last videos-->
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-container">
+            <div class="row height100">
+                <div class="col-xs-12 height100">
+                    <ul class="list-inline footer-main-menu rtl  pull-right no-pad">
+                        <li>
+                            <a href="#">
+								صفحه اصلی 
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							اخبار
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							مقالات
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+								اطلاع رسانی
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							کارگروه
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							  گالری عکس
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							 گالری ویدئو
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+							   درباره ما
+							</a>
+                        </li>
+                        <li>
+                            <a href="#">
+								تماس با ما
+							</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline footer-sub-menu rtl pull-right">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-paper-plane"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <img src="img/logo.png" class="img-responsive pull-left hidden-xs ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="right-sidebar hidden-lg hidden-md"></div>
+    <div class="left-sidebar hidden-lg hidden-md">
+        <div class="news-category mobile">
+            <ul class="nav nav-tabs " role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#all" aria-controls="all" role="tab" data-toggle="tab"></a>
+                </li>
+                <li role="presentation">
+                    <a href="#internal" aria-controls="internal" role="tab" data-toggle="tab"></a>
+                </li>
+                <li role="presentation">
+                    <a href="#exrtenal" aria-controls="external" role="tab" data-toggle="tab"></a>
+                </li>
+                <li role="presentation">
+                    <a href="#exclusive" aria-controls="exclusive" role="tab" data-toggle="tab"></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="all">
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="internal"></div>
+                <div role="tabpanel" class="tab-pane fade" id="external"></div>
+                <div role="tabpanel" class="tab-pane fade" id="exclusive"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery.checkradios.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
