@@ -78,6 +78,9 @@ a:hover {
 .pAbsolute {
     position: absolute
 }
+.pad15{
+	padding: 15px;
+}
 .width50 {
     width: 50% !important;
 }
@@ -282,7 +285,7 @@ div#OR {
     height: 55px;
 }
 .nav-menu {
-    height: 55px;
+/*    height: 55px;*/
 }
 .navigaion ul,
 .navigaion li,
@@ -1157,6 +1160,28 @@ footer {
 	border-radius:5px !important;
 	color: #040405;
 	margin: 0 1px;
+}
+
+/*////////////////*/
+.bahs-item{
+	background: white;
+	padding: 10px;
+	line-height: 1.7;
+	margin-bottom: 15px
+}
+.bahs-item h2{
+	color: #cd0402;
+}
+.answer-box{
+	background: #f6f6f6;
+	padding: 10px;
+}
+.answer-box p{
+	color: #cd0402;
+}
+.bahs-item a{
+	color: #cd0402;
+	display: block;
 }
 /*////////////////*/
 
