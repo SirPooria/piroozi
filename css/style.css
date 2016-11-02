@@ -78,11 +78,14 @@ a:hover {
 .pAbsolute {
     position: absolute
 }
-.pad15{
-	padding: 15px;
+.pad15 {
+    padding: 15px;
 }
 .width50 {
     width: 50% !important;
+}
+.padLeft10{
+	padding-left: 10px;
 }
 select {
     padding-top: 0 !important;
@@ -285,7 +288,7 @@ div#OR {
     height: 55px;
 }
 .nav-menu {
-/*    height: 55px;*/
+    /*    height: 55px;*/
 }
 .navigaion ul,
 .navigaion li,
@@ -1156,32 +1159,61 @@ footer {
     width: 47%;
     display: inline-block;
 }
-.pagination > li > a{
-	border-radius:5px !important;
-	color: #040405;
-	margin: 0 1px;
+.pagination > li > a {
+    border-radius: 5px !important;
+    color: #040405;
+    margin: 0 1px;
 }
-
 /*////////////////*/
-.bahs-item{
-	background: white;
-	padding: 10px;
-	line-height: 1.7;
-	margin-bottom: 15px
+
+.bahs-item {
+    background: white;
+    padding: 10px;
+    line-height: 1.7;
+    margin-bottom: 15px
 }
-.bahs-item h2{
-	color: #cd0402;
+.bahs-item h2 {
+    color: #cd0402;
 }
-.answer-box{
-	background: #f6f6f6;
-	padding: 10px;
+.answer-box {
+    background: #f6f6f6;
+    padding: 10px;
 }
-.answer-box p{
-	color: #cd0402;
+.answer-box p {
+    color: #cd0402;
 }
-.bahs-item a{
-	color: #cd0402;
-	display: block;
+.bahs-item a {
+    color: #cd0402;
+    display: block;
+}
+/*////////////////*/
+
+.top-instagram a {
+    font-size: 10px;
+    display: block;
+    width: 260px;
+    text-overflow: ellipsis;
+    width: 97%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    direction: rtl;
+    color: #000;
+    line-height: 2;
+    position: relative;
+    padding-right: 13px;
+}
+.top-instagram a:hover {
+    color: #d64040;
+}
+.top-instagram a:before {
+    content: "\f16d ";
+    color: #db000b;
+    font-weight: bold;
+    font-family: Fontawesome;
+    position: absolute;
+    right: 0;
 }
 /*////////////////*/
 
